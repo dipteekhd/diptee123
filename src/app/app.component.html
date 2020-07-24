@@ -1,0 +1,30 @@
+<ng-container>
+  <mat-toolbar class="list-header">
+    Diptee Khade
+    <div class="searchStyle">
+      <input matInput (keyup)="searchList($event)" placeholder="Search" />
+    </div>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="list-container">
+    <mat-sidenav
+      #sidenav
+      position="end"
+      mode="side"
+      opened
+      class="list-sidenav"
+      [fixedInViewport]="true"
+      [fixedTopGap]="60"
+    >
+      <div class="descripton">No description yet</div>
+      <app-list-details [selectedListDetails]="listDetails"></app-list-details>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <app-user-lists
+        [listData]="userLists"
+        [displayedListColumns]="listColumns"
+        (selectedDetails)="showListDetails($event)"
+      ></app-user-lists>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</ng-container>
