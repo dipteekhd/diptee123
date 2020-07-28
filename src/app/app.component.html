@@ -1,6 +1,14 @@
 <ng-container>
   <mat-toolbar class="list-header">
-    Diptee Khade
+    <button mat-button class="save headerButton">
+      <i class="fa fa-list saveIcon" aria-hidden="true"></i>SAVED LISTS
+    </button>
+    <span class="headerOptions">
+      <i class="fa fa-filter headerIcons" aria-hidden="true"></i>SAVED FILTERS
+    </span>
+    <span class="headerOptions">
+      <i class="fa fa-history headerIcons" aria-hidden="true"></i>SEARCH HISTORY
+    </span>
     <div class="searchStyle">
       <input matInput (keyup)="searchList($event)" placeholder="Search" />
     </div>
@@ -14,9 +22,15 @@
       opened
       class="list-sidenav"
       [fixedInViewport]="true"
-      [fixedTopGap]="60"
+      [fixedTopGap]="80"
     >
-      <div class="descripton">No description yet</div>
+      <div class="descripton">
+        No description yet
+        <span class="add"
+          ><i class="fa fa-plus plusIcon" aria-hidden="true"></i>Add
+          Description</span
+        >
+      </div>
       <app-list-details [selectedListDetails]="listDetails"></app-list-details>
     </mat-sidenav>
     <mat-sidenav-content>

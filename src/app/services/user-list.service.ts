@@ -6,7 +6,7 @@ import { of } from 'rxjs';
   providedIn: 'root',
 })
 export class UserListService {
-  constructor() { }
+  constructor() {}
 
   getAllLists() {
     const response: UserList[] = [
@@ -24,9 +24,9 @@ export class UserListService {
         createdDate: 'Aug 1',
         name: 'Books',
         details: [
-          'The Magic of Thinking Big by David J. Schwartz',
           'Unlimited Power by Anthony Robbins',
           'You can Heal Your Life by Louise L. Hay',
+          'The Magic of Thinking Big by David J. Schwartz',
           'The 7 Habits of Highly Effective People by Stephen R. Covey',
         ],
       },

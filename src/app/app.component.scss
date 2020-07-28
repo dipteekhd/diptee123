@@ -4,6 +4,7 @@
   left: 0;
   right: 0;
   float: right;
+  height: 80px;
 }
 .searchStyle {
   position: absolute;
@@ -11,8 +12,8 @@
 }
 .list-container {
   position: absolute;
-  top: 60px;
-  bottom: 0px;
+  top: 80px;
+  bottom: 0;
   left: 0;
   right: 0;
 }
@@ -20,12 +21,56 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
+  width: 290px;
 }
 .descripton {
   background: #f5f5f5;
   margin: 15px;
-  height: 40px;
-  padding: 8px;
-  font-family: auto;
+  height: 50px;
+  padding: 15px;
+  font-size: small;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.save {
+  background: rgb(0, 43, 85);
+  color: white;
+  font-size: small;
+}
+.add {
+  color: rgb(0, 68, 136);
+  font-weight: bold;
+  padding-left: 3px;
+}
+
+.headerButton {
+  font-weight: normal;
+  height: 45px;
+  width: 165px;
+  letter-spacing: 0.1em;
+  margin-right: 30px;
+}
+
+.headerOptions {
+  font-weight: normal;
+  font-size: small;
+  letter-spacing: 0.1em;
+  margin-right: 45px;
+}
+
+.saveIcon {
+  padding-right: 10px;
+}
+
+.headerIcons {
+  padding-right: 5px;
+  margin-top: -3px;
+  font-size: large;
+  position: relative;
+  top: 2px;
+}
+
+.plusIcon {
+  font-size: x-small;
 }
